@@ -1,0 +1,13 @@
+import { Interval } from "../interval/types";
+import { MobiusTransformation } from "./types";
+export declare function createMobiusTransformation(numeratorCoefficient: number, numeratorConstant: number, denominatorCoefficient: number, denominatorConstant: number): MobiusTransformation;
+export declare function identityMobiusTransformation(): MobiusTransformation;
+export declare function processUnitInterval(mobius: MobiusTransformation): MobiusTransformation;
+export declare function transformedForLowerInterval(mobius: MobiusTransformation, shift: number): MobiusTransformation;
+export declare function evaluateAt(mobius: MobiusTransformation, x: number): number;
+export declare function positiveDomainImage(mobius: MobiusTransformation): Interval;
+export declare function unitIntervalImage(mobius: MobiusTransformation): Interval;
+export declare function taylorShiftBy1(mobius: MobiusTransformation): MobiusTransformation;
+export declare function taylorShift(mobius: MobiusTransformation, shift: number): MobiusTransformation;
+export declare function reciprocalInput(mobius: MobiusTransformation): MobiusTransformation;
+export declare function scaleInput(mobius: MobiusTransformation, factor: number): MobiusTransformation;

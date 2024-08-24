@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Polynomial Real Root Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Polynomial Real Root Finder</h1>
+    <div class="input-container">
+      <label for="coefficients">Enter polynomial, for example "- 3x +x^2 + 0.2"
+      </label>
+      <input type="text" id="coefficients">
+    </div>
+      <div class="input-container">
+        <label for="precision">Precision:</label>
+        <input type="number" id="precision" placeholder="1e-5" min="0">
+      </div>
+    <button id="findRoots">Find Real Roots</button>
+    <div id="result">
+      <label>Result will be displayed here</label>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+
+</html>
